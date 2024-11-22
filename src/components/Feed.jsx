@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, createTheme, Stack, ThemeProvider, Typography } from "@mui/material";
 
 const Feed = () => {
   return (
