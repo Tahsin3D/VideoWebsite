@@ -1,14 +1,18 @@
 /* eslint-disable react/prop-types */
 
 import { Box, Stack } from "@mui/material";
+import VideoCard from "./VideoCard";
+import ChannelCard from "./ChannelCard";
 
 const Videos = ({ videos }) => {
-  console.log(videos[0].snippet.title);
   return (
     <Stack>
       <Box>
-        {videos.map((item) => (
-          <div key={item.id.videoId}>{item.snippet.title}</div>
+        {videos.map((item, idx) => (
+          <Box key={idx}>
+            {item.id.videoId && <VideoCard video={item} />}
+            {item.id.channelId && <ChannelCard/>}
+          </Box>
         ))}
       </Box>
     </Stack>
