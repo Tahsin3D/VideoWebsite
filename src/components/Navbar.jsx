@@ -9,6 +9,7 @@ const Navbar = () => {
       direction="row"
       alignItems="center"
       p={2}
+      height='5vh'
       sx={{
         position: "sticky",
         background: "#000",
