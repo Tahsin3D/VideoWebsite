@@ -21,7 +21,7 @@ const Sidebar = (props) => {
           onClick={()=>{setSelectedCategory(category.name)}}
           className="category-btn"
           key={category.name}
-          style={{ color: "white", margin: '6px 0px',
+          style={{ color: "white", margin: '6px 2px',
             background: category.name === selectedCategory && '#FC1503'
           }}
         >
